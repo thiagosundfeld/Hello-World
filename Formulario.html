@@ -3,32 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Thiago Sundfeld"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Formulario</title>
+    <link rel="stylesheet" href="./css/webstyle.css">
 </head>
 <body>
 <main>
     <section>
-        <h3>Nome</h3>
-        <input type="text" name="Nome">
-        <h3>CPF</h3>
-        <input type="text" name="CPF">
-        <h3>Endereço</h3>
-        <input type="text" name="Endereço">
-        <h3>Nascimento</h3>
-        <input type="text" name="Nascimento">
-        <h3>Telefone I</h3>
-        <input type="text" name="T1">
-        <h3>Telefone II</h3>
-        <input type="text" name="T2">
-        <h3>Estado Civil</h3>
-        <select name="EstadoCivil">
-            <option>Solteiro</option>
-            <option>Casado</option>
-            <option>Viuvo(a)</option>
-        </select>
-        <br>
-        <button type="button" name="Cadastrar">Cadastrar</button>
+    <h1 class="titulo">Cadastro de Pessoa</h1>
     </section>
+    <section>
+        <form method="get" id="form_cadastro" action="Cadastrado.html" target="_blank">
+    <label name="lnome_pessoa" class="nomeador">Nome Completo: </label>
+        <input type="text" class="input" id="nome_cadastro" name="nome"><br>
+        <label name="lcpf" class="nomeador">CPF: </label>
+        <input type="text" class="input" id="cpf_input" name="cpf"><br>
+        <label name="lendereco" class="nomeador">Endereço: </label>
+        <input type="text" class="input" id="endereco_input" name="endereco"><br>
+        <label name="lnascimento" class="nomeador">Nascimento: </label>
+        <input type="date" class="input" id="nasc_input" name="nascimento"><br>
+        <label name="ltelefone1" class="nomeador">Telefone I: </label>
+        <input type="text" class="input" id="tel1" name="telefone1"><br>
+        <label name="ltelefone2" class="nomeador">Telefone II: </label>
+        <input type="text" class="input" id="tel2" name="telefone2"><br>
+        <label name="lestadocivil" class="nomeador">Estado Cívil: </label>
+        <select id="est_civ" class="input" name="estadocivil">
+            <option value="Solteiro">Solteiro</option>
+            <option value="Casado">Casado</option>
+            <option value="Divorciado">Divorciado</option>
+            <option value="Viúvo">Viúvo</option>
+        </select><br>
+        <input type="submit" value="Cadastrar">
+        </form>
+    </section>
+
+    <script>
+
+    </script>
 
 </main>
 </body>

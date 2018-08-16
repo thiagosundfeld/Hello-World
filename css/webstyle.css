@@ -1,0 +1,18 @@
+body{
+    background-color: lightgreen;
+
+}
+
+.titulo{
+    color: black;
+    text-align: center;
+    border: lightgreen;
+}
+.nomeador{
+    color: black;
+    line-height: 5px;
+}
+
+.input{
+    border-radius: 25px;
+}

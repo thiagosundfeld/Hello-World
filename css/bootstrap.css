@@ -41,6 +41,10 @@
   box-sizing: border-box;
 }
 
+titulo{
+  text-align: center;
+}
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -66,7 +70,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: white;
 }
 
 [tabindex="-1"]:focus {
@@ -253,7 +257,7 @@ textarea {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
-  line-height: inherit;
+  line-height: 20px;
 }
 
 button,
