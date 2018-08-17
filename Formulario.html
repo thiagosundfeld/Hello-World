@@ -13,7 +13,7 @@
     <h1 class="titulo">Cadastro de Pessoa</h1>
     </section>
     <section>
-        <form method="get" id="form_cadastro" action="Cadastrado.html" target="_blank">
+        <form method="get" id="form_cadastro" action="">
     <label name="lnome_pessoa" class="nomeador">Nome Completo: </label>
         <input type="text" class="input" id="nome_cadastro" name="nome"><br>
         <label name="lcpf" class="nomeador">CPF: </label>
@@ -27,18 +27,42 @@
         <label name="ltelefone2" class="nomeador">Telefone II: </label>
         <input type="text" class="input" id="tel2" name="telefone2"><br>
         <label name="lestadocivil" class="nomeador">Estado Cívil: </label>
-        <select id="est_civ" class="input" name="estadocivil">
+        <select id="est_civ" class="input" name="estadocivil_input">
             <option value="Solteiro">Solteiro</option>
             <option value="Casado">Casado</option>
             <option value="Divorciado">Divorciado</option>
             <option value="Viúvo">Viúvo</option>
         </select><br>
-        <input type="submit" value="Cadastrar">
+        <input type="button" onclick="cadastrar()" value="Cadastrar">
         </form>
+
+        <p id="textoutput1"></p>
+        <p id="textoutput2"></p>
+        <p id="textoutput3"></p>
+        <p id="textoutput4"></p>
+        <p id="textoutput5"></p>
+        <p id="textoutput6"></p>
+        <p id="textoutput7"></p>
     </section>
 
     <script>
-
+function cadastrar(){
+/*    var nome = document.getElementById("nome_cadastro");
+    var cpf = document.getElementById("cpf_input").valueOf();
+    var endereco = document.getElementById("endereco_input").valueOf();
+    var nascimento = document.getElementById("nasc_input").valueOf();
+    var telefone1 = document.getElementById("tel1").valueOf();
+    var telefone2 = document.getElementById("tel2").valueOf();
+    var estadocivil = document.getElementById("estadocivil_input").valueOf();
+*/
+    document.getElementById("textoutput1").innerHTML = document.getElementById("nome_cadastro").value;
+    document.getElementById("textoutput2").innerHTML = document.getElementById("cpf_input").value;
+    document.getElementById("textoutput3").innerHTML = document.getElementById("endereco_input").value;
+    document.getElementById("textoutput4").innerHTML = document.getElementById("nasc_input").value;
+    document.getElementById("textoutput5").innerHTML = document.getElementById("tel1").value;
+    document.getElementById("textoutput6").innerHTML = document.getElementById("tel2").value;
+    document.getElementById("textoutput7").innerHTML = document.getElementById("est_civ").value;
+}
     </script>
 
 </main>
